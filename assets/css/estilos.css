@@ -4,22 +4,23 @@ body {
 }
 nav {
     grid-area: nav;
-    background-color: black;
+    background-color:#EAF2E3;
     height: 5em;
     color: aliceblue;
     text-align: center;
+    flex-direction: column;
 }
 menu {
     grid-area: menu;
-    background-color: #EAF2E3;
-    padding-left: 1em;
+    background-color: #131313;
+    padding-left: 0;
     height: 100vh;
     margin-top: 0;
     margin-bottom: 0;
 }
 main {
     grid-area: main;
-    background-color: #EAF2E3;
+    background-color: white;
     flex-grow: 1;
     padding-top: 0;
     display: flex; 
@@ -28,62 +29,42 @@ main {
 }
 footer {
     grid-area: footer;
-    background-color: grey;
+    background-color: black;
+    text-align: center;
 }
 .grid-container {
     display: grid;
     grid-template-areas:
-    "nav nav nav nav"
+    "menu nav nav nav"
     "menu main main main"
-    "footer footer footer footer";
+    "footer main main main";
     grid-template-columns: auto 1fr;
 }
 .lateral {
     display: flex;
     flex-direction: column;
+
+
 }    
 .categoria {
     flex-direction: row;
     display: flex;
-    Margin: 0; 
-    padding-right: 4em;  
-}    
-.categoria p {
-    font-size: x-small;
-    color: gray;
-    margin-left: 0.5em;
-    margin-top: 0.2em;
-    margin-bottom: 0.5em;
-}    
-.categoria a {
-    margin-bottom: 0.5em;
-    margin-top: 0;
-    font-weight: lighter;
-    text-decoration: none;
-    color: #000; 
-    font-size: small;
-}    
-.accesorios {
-    flex-direction: column;
-    padding: 0; 
-    display: flex;
     margin: 0; 
-}  
-.accesorios p {
-    font-size: x-small;
-    color: gray;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0.7em;
+
 }    
-.accesorios a {
-    margin-bottom: 0.5em;
+
+.categoria a {
+    margin-bottom: 0.8em;
     margin-top: 0;
     font-weight: lighter;
     text-decoration: none;
-    color: #000; 
+    color: white; 
     font-size: small;
-}    
+    width: 100%;
+    text-align: center;
+    
+
+}     
 .producto {
     flex-direction: column;
     display: flex;
@@ -105,6 +86,7 @@ footer {
     /* align-items: center; */
     height: 31em;
     margin-right: 1.5em;
+    margin-left: 1.5em;
  
 }
 .producto h5 {
@@ -117,9 +99,9 @@ footer {
     font-size: small;
 }   
 .producto button {
-    width: 40%;
+    width: 45%;
     color: white;
-    background-color: #333;
+    background-color: #131313;
     padding-top: 00.7em;
     padding-bottom: 0.5em;
     margin-top: 0,8em;
@@ -127,11 +109,39 @@ footer {
 h1 {
     font-family: 'Carter One';
 }
-    footer p {
+footer p {
     margin-top: 1em;
     margin-bottom: 1em;
-    font-size: small;
+    font-size: xx-small;
     font-weight: bold;
     text-align: center;
     justify-content: center;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+.contenedor-filtro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+
+}
+label {
+    margin-bottom: 10px; 
+    color: black;
+    font-size: small;
+}
+#filtro[value="Precio"] {
+    font-size: 11px; 
+}
+h4 {
+    color: white;
+    text-align: center;
+}
+footer i {
+    margin-top: 1em;
+    text-align: center;
+    justify-content: center;
+}
+  

@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/26c3be3da4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Media Queries</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,37 +18,50 @@
   </head>
   <body>
     <div class="grid-container">
-      <!-- Header principal -->
-      <nav><h1>De Todo Market</h1></nav>
+      <!-- Filtro Busqueda -->
+      <nav>
+        <div class="contenedor-filtro">
+          <label for="filtro">Ordenar por:</label>
+          <input
+            type="text"
+            id="filtro"
+            list="opciones"
+            style="width: 95%"
+            value="Precio"
+          />
+        </div>
+        <datalist id="opciones">
+          <option value="Precio">Precio</option>
+        </datalist>
+      </nav>
 
       <!-- Menu lateral con categorias -->
       <menu>
         <div class="lateral">
           <div>
-            <h4>Categorías</h4>
+            <h4>
+              <i class="fa-solid fa-store" style="color: #ffffff"></i>
+              Todo Market
+            </h4>
             <div class="categoria">
               <a href="https://franklinxavier14.github.io/desafio_layout/"
-                >Lentes</a
+                >Inicio</a
               >
-              <p>(13)</p>
             </div>
             <div class="categoria">
               <a href="https://franklinxavier14.github.io/desafio_layout/"
-                >Ropa</a
+                >Catálogo</a
               >
-              <p>(21)</p>
-            </div>
-            <div class="accesorios">
-              <a href="https://franklinxavier14.github.io/desafio_layout/"
-                >Accesorios</a
-              >
-              <p>(41)</p>
             </div>
             <div class="categoria">
               <a href="https://franklinxavier14.github.io/desafio_layout/"
-                >Zapatos</a
+                >Ofertas</a
               >
-              <p>(10)</p>
+            </div>
+            <div class="categoria">
+              <a href="https://franklinxavier14.github.io/desafio_layout/"
+                >Contacto</a
+              >
             </div>
           </div>
         </div>
@@ -79,18 +96,18 @@
             <button>Ver más</button>
           </div>
           <div class="producto">
-            <img src="assets\img\Reloj.jpg" alt="reloj" />
-            <h5>Reloj Casio Clasico</h5>
+            <img src="assets\img\botas.jpg" alt="botas" />
+            <h5>Botas Deportivas</h5>
             <button>Ver más</button>
           </div>
           <div class="producto">
-            <img src="assets\img\Reloj.jpg" alt="reloj" />
-            <h5>Reloj Casio Clasico</h5>
+            <img src="assets\img\mochila.jpg" alt="Mochila" />
+            <h5>Mochila Negra</h5>
             <button>Ver más</button>
           </div>
           <div class="producto">
-            <img src="assets\img\Reloj.jpg" alt="reloj" />
-            <h5>Reloj Casio Clasico</h5>
+            <img src="assets\img\visera.jpg" alt="visera" />
+            <h5>Visera Deportiva</h5>
             <button>Ver más</button>
           </div>
         </div>
@@ -98,9 +115,13 @@
 
       <!-- Footer con enlace a instagram -->
       <footer>
-        <p>
-          Síguenos en <a href="https://www.instagram.com/">@detodomarket</a>
-        </p>
+        <a href="https://web.facebook.com/"
+          ><i class="fa-brands fa-facebook" style="color: #ffffff"></i
+        ></a>
+        <a href="https://www.instagram.com/?hl=es"
+          ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+        ></a>
+        <p>Todos los Derechos Reservados</p>
       </footer>
     </div>
   </body>
