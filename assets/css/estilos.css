@@ -203,7 +203,7 @@ body {
 nav {
     grid-area: nav;
     background-color:#EAF2E3;
-    height: 5em;
+    height: 6em;
     color: aliceblue;
     text-align: center;
     flex-direction: column;
